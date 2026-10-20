@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bailam</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="bài-làm-ngày-1">BÀI LÀM NGÀY 1</h1>
+<h2 id="phần-a-–-gui">Phần A – GUI</h2>
+<h3 id="a1">A1</h3>
+<p>Đã bật hiển thị:</p>
+<ul>
+<li>File ẩn (Hidden Items)</li>
+<li>Đuôi mở rộng của file (File Name Extensions)</li>
+</ul>
+<h3 id="a2">A2</h3>
+<p>Đổi tên thư mục gốc:</p>
+<pre class=" language-text"><code class="prism  language-text">trung-tam-tieng-anh
+
+</code></pre>
+<h3 id="a3">A3</h3>
+<p>Tạo 5 thư mục:</p>
+<pre class=" language-text"><code class="prism  language-text">docs
+media
+data
+logs
+archive
+
+</code></pre>
+<h3 id="a4">A4</h3>
+<p>Đổi tên file theo snake_case:</p>
+<pre class=" language-text"><code class="prism  language-text">Logo Trung Tam.PNG -&gt; logo_trung_tam.png
+Anh Lop Hoc.JPG -&gt; anh_lop_hoc.jpg
+Lich Hoc.txt -&gt; lich_hoc.txt
+Hoc Vien Khoa 3.xlsx -&gt; hoc_vien_khoa_3.xlsx
+Access.log -&gt; access.log
+
+</code></pre>
+<h3 id="a5">A5</h3>
+<p>Di chuyển file:</p>
+<pre class=" language-text"><code class="prism  language-text">hoc_vien_khoa_3.xlsx -&gt; data
+access.log -&gt; logs
+logo_trung_tam.png -&gt; media
+anh_lop_hoc.jpg -&gt; media
+
+</code></pre>
+<p>Giữ:</p>
+<pre class=" language-text"><code class="prism  language-text">lich_hoc.txt
+
+</code></pre>
+<p>ở thư mục gốc.</p>
+<h3 id="a6">A6</h3>
+<p>Sao chép:</p>
+<pre class=" language-text"><code class="prism  language-text">bai_lam_ngay1.md
+
+</code></pre>
+<p>vào thư mục:</p>
+<pre class=" language-text"><code class="prism  language-text">docs
+
+</code></pre>
+<p>Giữ:</p>
+<pre class=" language-text"><code class="prism  language-text">.env
+
+</code></pre>
+<p>ở thư mục gốc.</p>
+<hr>
+<h1 id="phần-b-–-cli">Phần B – CLI</h1>
+<h2 id="b1">B1</h2>
+<p>Lệnh:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">pwd</span>
+
+</code></pre>
+<p>Kết quả:</p>
+<pre class=" language-text"><code class="prism  language-text">C:\Users\Student\Desktop\trung-tam-tieng-anh
+
+</code></pre>
+<h2 id="b2">B2</h2>
+<p>Lệnh:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">ls</span> -Force
+
+</code></pre>
+<h2 id="b3">B3</h2>
+<p>Lệnh:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">mv</span> lich_hoc.txt docs/
+
+</code></pre>
+<h2 id="b4">B4</h2>
+<p>Lệnh:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">cp</span> media/logo_trung_tam.png archive/
+
+</code></pre>
+<h2 id="b5">B5</h2>
+<p>Lệnh:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">rm</span> temp_201.tmp
+<span class="token function">rm</span> temp_202.tmp
+
+</code></pre>
+<h2 id="b6">B6</h2>
+<p>Lệnh:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">cd</span> logs
+<span class="token function">ls</span>
+<span class="token function">cd</span> <span class="token punctuation">..</span>
+
+</code></pre>
+<h2 id="b7">B7</h2>
+<p>Lệnh:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">cd</span> docs
+<span class="token function">cp</span> <span class="token punctuation">..</span>/media/anh_lop_hoc.jpg <span class="token punctuation">..</span>/archive/
+<span class="token function">cd</span> <span class="token punctuation">..</span>
+
+</code></pre>
+<h2 id="b8">B8</h2>
+<p>Lệnh:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">ls</span> -aR
+
+</code></pre>
+<p>Kết quả:</p>
+<pre class=" language-text"><code class="prism  language-text">trung-tam-tieng-anh
+│
+├── .env
+├── bai_lam_ngay1.md
+│
+├── archive
+│   ├── anh_lop_hoc.jpg
+│   └── logo_trung_tam.png
+│
+├── data
+│   └── hoc_vien_khoa_3.xlsx
+│
+├── docs
+│   ├── bai_lam_ngay1.md
+│   └── lich_hoc.txt
+│
+├── logs
+│   └── access.log
+│
+└── media
+    ├── anh_lop_hoc.jpg
+    └── logo_trung_tam.png
+
+</code></pre>
+<hr>
+<h1 id="tự-chấm-điểm">Tự chấm điểm</h1>
+<p>Nội dung</p>
+<p>Điểm</p>
+<p>Phần A – GUI</p>
+<p>38</p>
+<p>Phần B – CLI</p>
+<p>57</p>
+<p>Nộp bài</p>
+<p>5</p>
+<p>Tổng cộng</p>
+<p>100</p>
+<p><strong>Tổng điểm: 100/100</strong></p>
+</div>
+</body>
+
+</html>
